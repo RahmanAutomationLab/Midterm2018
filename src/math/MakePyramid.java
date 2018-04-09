@@ -14,9 +14,21 @@ public class MakePyramid {
 
         //Start Here
 
+        makePyramid(15);
+    }
 
+    public static void makePyramid(int max){
+        for (int i = 1; i<max; i++){
+            for(int j=i; j<max-1; j++){
+                System.out.print(" ");
+            }
+            for(int j = i; j>0; j--){
 
+                System.out.print("* ");
 
+            }
+            System.out.println();
 
-         }
+        }
+    }
   }
