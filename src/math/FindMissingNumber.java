@@ -13,9 +13,9 @@ public class FindMissingNumber {
          */
          int [] array = new int[]{10, 2, 1, 4, 5, 3, 7, 8, 6};
 
-        System.out.println("missing number of the array is: " +missingNumbers(array,10));
+        System.out.println("missing number of the array is: " +FindmissingNumbers(array,10));
     }
-    public static int missingNumbers(int[] array, int n){
+    public static int FindmissingNumbers(int[] array, int n){
         int result = 0;
         int total = 0;
         for(int i = 0; i<n; i++){
