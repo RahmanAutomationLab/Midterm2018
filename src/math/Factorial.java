@@ -12,5 +12,29 @@ public class Factorial {
          *
          */
 
+        Recursion re=new Recursion();
+        int a=re.fact(10);
+        System.out.println("The factorial number is : "+a);
+        System.out.println("*********");
+
+        int fact=5;
+        int result =5;
+        for (int i=fact-1;i>0;i--){
+
+            result= result *i;
+
+        }
+        System.out.println("Factorial of fact is :"+fact + "  : " +result);
+    }
+}
+class Recursion{
+
+    int fact(int n) {
+        int result;
+        if (n==1)
+            return 1;
+        result =fact(n-1)*n;
+        return result;
+
     }
 }
