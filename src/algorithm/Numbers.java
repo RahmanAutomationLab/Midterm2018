@@ -69,17 +69,9 @@ public class Numbers {
 		List<String> gnumbers = connectDB.readDataBase("bubble_sort", "SortingNumbers");
 		printValue(bnumbers);
 		int gn = num.length;
-		randomize(num,bn);
-
-
-
-
-
-
-
+		randomize(num,gn);
 
 		//Come to conclusion about which Sorting Algo is better in given data set.
-
 	}
 
 	public static void storeRandomNumbers(int [] num){

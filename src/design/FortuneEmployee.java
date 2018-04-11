@@ -15,10 +15,14 @@ public class FortuneEmployee {
 	 **/
 	public static void main(String[] args) {
 
-		EmployeeInfo employee=new EmployeeInfo (10);
-		
-
-
+		EmployeeInfo emp=new EmployeeInfo(101);
+		EmployeeInfo emp1=new EmployeeInfo("MD",102);
+		EmployeeInfo emp2=new EmployeeInfo("Kaniz",103,25);
 	}
+
+
+	//EmployeeInfo.nestedClass nestedreff=emp3.new nestedClass();
+	//nestedreff.nestedMethod();
+
 
 }

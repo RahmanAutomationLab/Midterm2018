@@ -22,15 +22,18 @@ public class EmployeeInfo extends EmpAbastrct implements Employee {
 		return address;
 	}
 
-	public static void setAddress(String address) {
+	public static void setAddress(String address)
+	{
 		EmployeeInfo.address = address;
 	}
 
 	public static String getCompanyName() {
+
 		return companyName;
 	}
 
-	public static void setCompanyName(String companyName) {
+	public static void setCompanyName(String companyName)
+	{
 		EmployeeInfo.companyName = companyName;
 	}
 
@@ -38,15 +41,12 @@ public class EmployeeInfo extends EmpAbastrct implements Employee {
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String address;
-	static String companyName;
-
-	private String employeeName;
-	private int employeeAge;
+	private static String companyName;
+	private String name;
 	private int employeeId;
+	private int employeeAge;
 	private int performance;
-	private static int salary;
-
-	
+	public static int salary;
 	/*
 	 * You must implement the logic for below 2 methods and 
 	 * following 2 methods are prototype as well for other methods need to be design,
@@ -57,14 +57,21 @@ public class EmployeeInfo extends EmpAbastrct implements Employee {
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
 	 */
-	public EmployeeInfo(int empId){
-		this.employeeId=empId;
+	public EmployeeInfo(int employeeId){
+
+		this.employeeId=employeeId;
 	}
-    public EmployeeInfo(String empName, int empId){
-		this.employeeName=empName;
-		this.employeeId=empId;
+    public EmployeeInfo(String name, int employeeId){
+		this.name=name;
+		this.employeeId=employeeId;
 		
 	}
+	public EmployeeInfo(String name, int employeeId, int employeeAge) {
+		this.name = name;
+		this.employeeId = employeeId;
+		this.employeeAge = employeeAge;
+	}
+
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
 	 * Then it will return the total yearly bonus. So you need to implement the logic.
@@ -96,8 +103,8 @@ public class EmployeeInfo extends EmpAbastrct implements Employee {
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
 	 * 
 	 */
-	public static int calculateEmployeePension(){
-		int total=0;
+	public static double calculateEmployeePension(int salary){
+		double total=0;
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
 		String joiningDate = sc.nextLine();
@@ -110,25 +117,41 @@ public class EmployeeInfo extends EmpAbastrct implements Employee {
 		//Calculate pension
 		String startYear = convertedJoiningDate.substring(convertedJoiningDate.length()-4);
 		String currentYear = convertedTodaysDate.substring(convertedTodaysDate.length()-4);
+
 		int start = Integer.parseInt(startYear);
 		int current = Integer.parseInt(currentYear);
-		/*if((current-start)==1){
-			total = salary*.05;
+
+		if((current-start)==1){
+			total =salary * .05;                               //total = salary *.05;
 		}else if((current-start)>=2){
 			total = salary*.1;
 		}else if((current-start)<=1) {
 			total = 0;
 		}
-		System.out.println("Employee Pension is = $ " +total);*/
+		System.out.println("Employee Pension is = $ " +total);
 		return total;
 	}
 
+
+	//Encapsulation
+	public String getName() {
+		return name;
+	}
+
+	public String setName(String name) {
+		this.name = name;
+		return name;
+	}
+
+	//Employee Interface
 	@Override
-	public int employeeId() {
+	public int employeeId()
+	{
 		return 0;
 	}
 
 	public String employeeName() {
+
 		return null;
 	}
 
@@ -136,7 +159,8 @@ public class EmployeeInfo extends EmpAbastrct implements Employee {
 
 	}
 
-	public int calculateSalary() {
+	public int calculateSalary()
+	{
 		return 0;
 	}
 
@@ -144,11 +168,24 @@ public class EmployeeInfo extends EmpAbastrct implements Employee {
 
 	}
 
+	//abstract method
+    public void EmpBreakTime(){
+
+		System.out.println("Employee will take 30 min break");
+	}
+	//Employee Own method
+	public void EmpBenefits() {
+	System.out.println(" Employee will get health care benefits ");
+	}
+
+
 	private static class DateConversion {
 
-		public DateConversion(Months months){}
+		public DateConversion(Months months) {
+		}
+
 		public static String convertDate(String date) {
-			String [] extractMonth = date.split(",");
+			String[] extractMonth = date.split(",");
 			String givenMonth = extractMonth[0];
 			int monthDate = whichMonth(givenMonth);
 			String actualDate = monthDate + "/" + extractMonth[1];
@@ -203,4 +240,9 @@ public class EmployeeInfo extends EmpAbastrct implements Employee {
 
 		}
 	}
-}
+		public class nestedClass {
+			public void nestedMethod() {
+				System.out.println("Name");
+			}
+		}
+	}

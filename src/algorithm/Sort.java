@@ -78,7 +78,7 @@ public class Sort {
     //*********************************************************//
 
     public void mergeSort(int [] array){
-        //int [] list = array;
+
         //implement here
         int temp;
         if (array.length > 1) {
@@ -89,8 +89,8 @@ public class Sort {
             mergeSort(right);
             merge(array, left, right);
         }
-    }
 
+    }
     // left half
     public int[] leftHalf(int[] array) {
         int size1 = array.length / 2;
@@ -111,7 +111,6 @@ public class Sort {
         }
         return right;
     }
-
     // result
     public void merge(int[] result, int[] left, int[] right) {
         int j = 0;
