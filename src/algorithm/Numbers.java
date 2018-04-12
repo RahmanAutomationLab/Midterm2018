@@ -78,7 +78,7 @@ public class Numbers {
 	public static void storeRandomNumbers(int [] num){
 		Random rand = new Random();
 		for(int i=0; i<num.length; i++){
-			num[i] = rand.nextInt(100);//(1000000);
+			num[i] = rand.nextInt(1000000);
 		}
 	}
 
