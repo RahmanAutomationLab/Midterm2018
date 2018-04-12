@@ -22,7 +22,29 @@ public class UnitTestSorting {
         }
 
         //Now do for rest of the algorithm...................below
+        //insertion sort
+        sort.insertionSort(unSortedArray);
+        try{
+            Assert.assertEquals(sortedArray, unSortedArray, "Insertion sort array is not sorted!");
+        }catch (Exception ex){
+            ex.getMessage();
+        }
+        //**************************************************
+        sort.bubbleSort(unSortedArray);
+        try {
+            Assert.assertEquals(sortedArray, unSortedArray, "Bubble sort array is not sorted!");
+        }catch(Exception ex){
+            ex.getMessage();
+        }
 
-
+        //**********************************************************
+        // merge sort
+        sort.mergeSort(unSortedArray);
+        try{
+            Assert.assertEquals(sortedArray, unSortedArray, "Merge sort array is not sorted!");
+        }catch (Exception ex){
+            ex.getMessage();
+        }
+        //*************************************
     }
 }

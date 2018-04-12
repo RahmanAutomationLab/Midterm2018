@@ -20,59 +20,60 @@ public class Numbers {
 	 *
 	 */
 	public static void main(String[] args) throws Exception {
-		
-		int [] num = new int [10];    //[1000000];
+
+		int[] num = new int[100];
 		storeRandomNumbers(num);
 		ConnectDB connectDB = new ConnectDB();
 		//Selection Sort *******************************************************************//
 		Sort algo = new Sort();
 		algo.selectionSort(num);
 		long selectionSortExecutionTime = algo.executionTime;
-		System.out.println("Total Execution Time of "+ num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
-        connectDB.insertDataFromArrayToMySql(num, "selection_sort", "SortingNumbers");
-        List<String> numbers = connectDB.readDataBase("selection_sort", "SortingNumbers");
-        printValue(numbers);
+		System.out.println("Total Execution Time of " + num.length + " numbers in Selection Sort take: " + selectionSortExecutionTime + " milli sec");
+		connectDB.insertDataFromArrayToMySql(num, "selection_sort", "SortingNumbers");
+		List<String> numbers = connectDB.readDataBase("selection_sort", "SortingNumbers");
+		printValue(numbers);
 		int n = num.length;
-		randomize (num, n);
+		randomize(num, n);
 		//Insertion Sort
-     //****************************************************************************************//
+		//****************************************************************************************//
 		algo.insertionSort(num);
 		long insertionSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
-		connectDB.insertDataFromArrayToMySql(num,"insertion_sort","SortingNumbers");
+		connectDB.insertDataFromArrayToMySql(num, "insertion_sort", "SortingNumbers");
 		List<String> inumbers = connectDB.readDataBase("insertion_sort", "SortingNumbers");
 		printValue(inumbers);
 		int in = num.length;
-		randomize(num,in);
+		randomize(num, in);
 
 		//**BubbleSort**************************************************//
 		algo.bubbleSort(num);
 		long bubbleSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Bubble Sort take: " + bubbleSortExecutionTime + " milli sec");
-		connectDB.insertDataFromArrayToMySql(num,"bubble_sort","SortingNumbers");
+		connectDB.insertDataFromArrayToMySql(num, "bubble_sort", "SortingNumbers");
 		List<String> bnumbers = connectDB.readDataBase("bubble_sort", "SortingNumbers");
 		printValue(bnumbers);
 		int bn = num.length;
-		randomize(num,bn);
-//*******************//
-		/*algo.insertionSort(num);
-		long insertionSortExecutionTime = algo.executionTime;
-		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
+		randomize(num, bn);
 
-	 */ //By following above, Continue for rest of the Sorting Algorithm....
-	 //MergeSort**************************************************************//
+
+		//By following above, Continue for rest of the Sorting Algorithm....
+		//MergeSort**************************************************************//
 
 		algo.mergeSort(num);
 		long mergeSortExecutionTime = algo.executionTime;
 		System.out.println("Total Execution Time of " + num.length + " numbers in Bubble Sort take: " + bubbleSortExecutionTime + " milli sec");
-		connectDB.insertDataFromArrayToMySql(num,"bubble_sort","SortingNumbers");
+		connectDB.insertDataFromArrayToMySql(num, "bubble_sort", "SortingNumbers");
 		List<String> gnumbers = connectDB.readDataBase("bubble_sort", "SortingNumbers");
 		printValue(bnumbers);
 		int gn = num.length;
-		randomize(num,gn);
+		randomize(num, gn);
+
+	}
+	//*************************************************************8
+
 
 		//Come to conclusion about which Sorting Algo is better in given data set.
-	}
+
 
 	public static void storeRandomNumbers(int [] num){
 		Random rand = new Random();
