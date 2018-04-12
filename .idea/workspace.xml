@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9771989b-51b3-4e7c-b47c-ddb973a42c7b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/databases/ConnectDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/databases/ConnectDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/datastructure/UseMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructure/UseMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/datastructure/UseQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/datastructure/UseQueue.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,11 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UseMap.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UseMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/datastructure/UseMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+            <state relative-caret-position="23">
+              <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#631#639#0" expanded="true" />
@@ -90,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DuplicateWord.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/problems/DuplicateWord.java">
+      <file leaf-file-name="UseQueue.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/datastructure/UseQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+            <state relative-caret-position="195">
+              <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -173,13 +171,14 @@
         <option value="$PROJECT_DIR$/src/datastructure/UseArrayList.java" />
         <option value="$PROJECT_DIR$/src/databases/ConnectDB.java" />
         <option value="$PROJECT_DIR$/src/datastructure/UseMap.java" />
+        <option value="$PROJECT_DIR$/src/datastructure/UseQueue.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="614" />
-    <option name="y" value="33" />
-    <option name="width" value="756" />
+    <option name="x" value="430" />
+    <option name="y" value="57" />
+    <option name="width" value="683" />
     <option name="height" value="709" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -273,22 +272,11 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.UseMap">
+  <component name="RunManager" selected="Application.UseQueue">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HEIGHT" value="0" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <option name="WIDTH" value="0" />
-    </configuration>
-    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="problems.Palindrome" />
-      <module name="CodingExamMarch2018" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="problems.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
     </configuration>
     <configuration name="Permutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="problems.Permutation" />
@@ -325,6 +313,17 @@
     </configuration>
     <configuration name="UseMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="datastructure.UseMap" />
+      <module name="CodingExamMarch2018" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="datastructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="UseQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastructure.UseQueue" />
       <module name="CodingExamMarch2018" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -389,19 +388,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list>
-      <item itemvalue="Application.Palindrome" />
       <item itemvalue="Application.Permutation" />
       <item itemvalue="Application.UnitTestingStringProblem" />
       <item itemvalue="Application.UseArrayList" />
       <item itemvalue="Application.UseMap" />
+      <item itemvalue="Application.UseQueue" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UseQueue" />
         <item itemvalue="Application.UseMap" />
         <item itemvalue="Application.UseArrayList" />
         <item itemvalue="Application.UnitTestingStringProblem" />
         <item itemvalue="Application.Permutation" />
-        <item itemvalue="Application.Palindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -430,12 +429,12 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.1879085" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35947713" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.09150327" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.07026144" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12737921" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.093704246" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -601,13 +600,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/math/UnitTestingMath.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/datastructure/UseQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -844,12 +836,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/datastructure/UseMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
+        <state relative-caret-position="23">
+          <caret line="33" column="16" lean-forward="true" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#631#639#0" expanded="true" />
             <element signature="e#1152#1174#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/datastructure/UseQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
