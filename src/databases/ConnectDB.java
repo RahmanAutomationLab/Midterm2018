@@ -93,7 +93,7 @@ public class ConnectDB {
         }
         return dataList;
     }
-     //ARRAY DATA
+     //INSERTING DATA
     public void insertDataFromArrayToMySql(int [] ArrayData, String tableName, String columnName)
     {
         try {
